@@ -206,8 +206,6 @@ const About = () => {
                   <div>
                     <motion.div className="text-3xl flex text-white max-w-full flex-col items-center align-center "
                     key={itemIndex}
-                    
-
                     >
                     <motion.div
                     transition={{
