@@ -40,7 +40,7 @@ const serviceData = [
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Boost web visibility with expert SEO services for higher rankings',
   },
 ];
 
