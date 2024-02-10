@@ -77,8 +77,8 @@ const aboutData = [
         course: 'Bachelor of Science In Information Technology',
     
         awards: [
-          {awardName: `- Dean's Lister`},
-          {awardName: '- Events Lead | Google Developers Student Club '}
+          {awardName: `- Consistent dean's Lister`},
+          {awardName: '- Chief Technology Officer | Google Developers Student Club '}
         ]
       },
       {
@@ -97,6 +97,11 @@ const aboutData = [
   {
     title: 'experience',
     info: [
+      {
+        title: 'Ateneo De Zamboanga Junior Web Developer',
+        stage2: '- Code and Develop School IT Systems (Full Stack - frontend and backend)',
+        stage3: '- Maintain School IT Legacy Systems'
+      },
       {
         title: 'GSYNC Solutions Philippines - Intern (450 hours)',
         position: '- Assistant IT Team Lead',
@@ -157,7 +162,7 @@ const About = () => {
             Captivating <span className="text-accent">stories</span> birth magnificent designs.
           </h2>
           <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            I am Mark Stanley Wu, a student passionate about becoming a full-stack developer. Focused on the MERN stack and Next.js. I'm excited to collaborate and bring innovative web experiences to life.
+            I am Mark Stanley Wu, a student passionate about becoming a full-stack developer. Focused on the MERN stack and Next.Js. I'm excited to collaborate and bring innovative web experiences to life.
           </p>
    
       </motion.div>
@@ -184,11 +189,11 @@ const About = () => {
           {aboutData[index].info.map((item, itemIndex)=>{
             return (
               <div key={itemIndex} >
-               <div className="font-normal mb-2 md:mb-0">{item.title}</div>
+               <div className="font-medium mb-2 md:mb-0">{item.title}</div>
                {/* <div className="hidden md:flex">-</div> */}
                <div className="font-light ">{item.position}</div>
                <div className="font-light">{item.stage}</div>
-               <div className="font-[390]">{item.course}</div>
+               <div className="font-normal">{item.course}</div>
                <div className="font-light">{item.stage2}</div>
                <div className="font-light">{item.stage3}</div>
                <div className="font-light">{item.date}</div>
