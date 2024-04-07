@@ -34,7 +34,8 @@ function Home() {
     animate="show" 
     exit="hidden"
     className="hidden xl:flex max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-gray-200">
-      I am a full stack developer based in the Philippines. I like to explore new possibilites with emerging technologies, providing digital solutions and outcomes.<br></br>I am specializing in React.js, Node.js, MongoDB, and Express.js. I am also currently upskilling in Next.js for building SEO friendly applications.
+    {/*   I am a full stack developer based in the Philippines. I like to explore new possibilites with emerging technologies, providing digital solutions and outcomes.<br></br>I am specializing in React.js, Node.js, MongoDB, and Express.js. I am also currently upskilling in Next.js for building SEO friendly applications. */}
+    I am Mark Stanley Wu, a graduating student side hustling as a freelance React/NextJs Developer. I'm excited to collaborate and bring innovative web experiences to life.
     </motion.p>
 
     <div className="flex justify-center xl:hidden relative">

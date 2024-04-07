@@ -2,25 +2,25 @@
 const testimonialData = [
   {
     image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    name: 'Erwin Alvarez',
+    position: 'Customer from fiverr',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'I had an excellent experience collaborating with Mark on a recent project. His exceptional communication, technical proficiency, and problem-solving skills were evident throughout our work together. Mark demonstrated adaptability to changes, consistently met deadlines, and delivered a product that exceeded expectations. I highly recommend Mark to anyone in search of a skilled software developer on Fiverr. It was a pleasure working with him, and I"m eager for future collaborations.',
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    name: 'echtebezlsr',
+    position: 'Customer from fiverr',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Amazing guy.',
   },
-  {
+  /* {
     image: '/t-avt-3.png',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
-  },
+  }, */
 ];
 
 import {FaQuoteLeft} from 'react-icons/fa';
@@ -47,7 +47,7 @@ const TestimonialSlider = () => {
     testimonialData.map((person, index)=>{
       return (
         <SwiperSlide key={index}>
-          <div className='flex flex-col items-center md:flex-row gap-x-8 h-full px-16'>
+          <div className='flex flex-col items-center overflow-auto md:flex-row gap-x-8 h-full px-16'>
             <div className='w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0'>
               <div className='flex flex-col justify-center text-center'>
                 <div className='mb-2 mx-auto'>
@@ -61,7 +61,7 @@ const TestimonialSlider = () => {
             <div className='mb-4'>
               <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0'/>
             </div>
-            <div className='xl:text-lg text-center md:text-left'>{person.message}</div>
+            <div className='xl:text-lg text-center md:text-left overflow-auto'>{person.message}</div>
             </div>
           </div>
         </SwiperSlide>

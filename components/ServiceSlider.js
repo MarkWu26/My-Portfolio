@@ -20,7 +20,7 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Web Development',
-    description: 'Develop static and dynamic web-applications',
+    description: 'Develop static and dynamic web-applications using modern frameworks and technologies',
   },
   {
     icon: <RxPencil2 />,

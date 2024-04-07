@@ -24,8 +24,9 @@ import {
   SiMongodb,
   SiExpress,
   SiTailwindcss,
+  SiPrisma,
   SiPostman,
-  SiPrisma
+  SiTypescript
 } from "react-icons/si";
 
 import { useState } from "react";
@@ -49,14 +50,14 @@ const aboutData = [
           {icon: <SiMongodb/>, name: "MongoDB"},
           {icon: <SiExpress/>, name: "Expressjs"},
           {icon:  <SiNextdotjs/>, name: "Nextjs"},
+          {icon:  <SiTypescript />, name: "Typescript"},
           {icon: <SiTailwindcss/>, name: "Tailwind"},
           {icon: <SiMysql/>, name: "MySQL"},
           {icon:  <SiPrisma/>, name: "Prisma"},
           {icon:  <SiFramer/>, name: "Framer"},
-          {icon:  <FaWordpress />, name: "Wordpress"},
           {icon:  <BsGit/>, name: "Git"},
           {icon:   <BsGithub/>, name: "Github"},
-          {icon:   <SiPostman/>, name: "Github"},
+          {icon:  <SiPostman />, name: "Postman"},
         ],
       },
       {
@@ -77,6 +78,7 @@ const aboutData = [
         course: 'Bachelor of Science In Information Technology',
     
         awards: [
+          {awardName: `- Cum Laude`},
           {awardName: `- Consistent dean's Lister`},
           {awardName: '- Chief Technology Officer | Google Developers Student Club '}
         ]
@@ -98,7 +100,11 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Ateneo De Zamboanga Junior Web Developer',
+        title: 'Freelance React/NextJs Developer (1 year)',
+        stage2: '- Full stack web system development for clients',
+      },
+      {
+        title: 'Ateneo De Zamboanga Junior Web Developer (1 year)',
         stage2: '- Code and Develop School IT Systems (Full Stack - frontend and backend)',
         stage3: '- Maintain School IT Legacy Systems'
       },
@@ -115,8 +121,9 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Ateneo Computing Festival AlgoLumpia at HackaTuron',
-        stage: ' - Hackathon Finalist',
+        title: 'UPACM Algolympics Programming Competition (2024)',
+        stage: ' - Top 22 National Finalist',
+        stage2: ' - Top 1 in Mindanao',
       },
       {
         title: 'Responsive Web Design Certifcate',
@@ -162,13 +169,13 @@ const About = () => {
             Captivating <span className="text-accent">stories</span> birth magnificent designs.
           </h2>
           <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            I am Mark Stanley Wu, a student passionate about becoming a full-stack developer. Focused on the MERN stack and Next.Js. I'm excited to collaborate and bring innovative web experiences to life.
+            I am Mark Stanley Wu, a graduating student side hustling as a freelance React/NextJs Developer. I'm excited to collaborate and bring innovative web experiences to life.
           </p>
    
       </motion.div>
 
       <motion.div 
-      className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+      className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-auto"
       variants={fadeIn('left', 0.6)}
       initial="hidden"
       animate="show"
@@ -188,8 +195,8 @@ const About = () => {
         <div className="py-2 xl:py-6 flex flex-col items-center gap-y-2 xl:gap-y-4 xl:items-start">
           {aboutData[index].info.map((item, itemIndex)=>{
             return (
-              <div key={itemIndex} >
-               <div className="font-medium mb-2 md:mb-0">{item.title}</div>
+              <div key={itemIndex} /* className="border-b-[1px] w-full" */>
+               <div className="font-semibold text-lg mb-2 md:mb-0">{item.title}</div>
                {/* <div className="hidden md:flex">-</div> */}
                <div className="font-light ">{item.position}</div>
                <div className="font-light">{item.stage}</div>
