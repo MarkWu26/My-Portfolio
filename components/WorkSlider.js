@@ -19,8 +19,9 @@ const workSlides = {
           url: 'https://adani-hotel-spa-react-js-main.vercel.app/'
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Tom Coin Gate',
+          path: '/tomcoin.png',
+          url: 'https://gate.tomcoin.wtf/'
         },
       ],
     },

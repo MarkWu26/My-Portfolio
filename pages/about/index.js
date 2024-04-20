@@ -4,7 +4,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
   FaNode,
 } from "react-icons/fa";
@@ -25,9 +24,10 @@ import {
   SiExpress,
   SiTailwindcss,
   SiPrisma,
-  SiPostman,
   SiTypescript
 } from "react-icons/si";
+
+import { SiShadcnui } from "react-icons/si";
 
 import { useState } from "react";
 import Circles from "@/components/Circles";
@@ -52,12 +52,12 @@ const aboutData = [
           {icon:  <SiNextdotjs/>, name: "Nextjs"},
           {icon:  <SiTypescript />, name: "Typescript"},
           {icon: <SiTailwindcss/>, name: "Tailwind"},
-          {icon: <SiMysql/>, name: "MySQL"},
+          {icon: <SiMysql/>, name: "Shadcn UI"},
           {icon:  <SiPrisma/>, name: "Prisma"},
           {icon:  <SiFramer/>, name: "Framer"},
           {icon:  <BsGit/>, name: "Git"},
           {icon:   <BsGithub/>, name: "Github"},
-          {icon:  <SiPostman />, name: "Postman"},
+          {icon:  <SiMysql />, name: "MySQL"},
         ],
       },
       {
