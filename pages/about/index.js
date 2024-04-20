@@ -27,7 +27,7 @@ import {
   SiTypescript
 } from "react-icons/si";
 
-import { SiShadcnui } from "react-icons/si";
+/* import { SiShadcnui } from "react-icons/si"; */
 
 import { useState } from "react";
 import Circles from "@/components/Circles";
